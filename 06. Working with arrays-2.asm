@@ -5,8 +5,8 @@ includelib <\masm32\lib\debug.lib>
 .data
  
 mas db 23,4,5,67,5,6,7,99,67,8,9,23,87,9,0,8
-i db 0 ;столбец
-j db 0 ;строка
+i db 0 ;СЃС‚РѕР»Р±РµС†
+j db 0 ;СЃС‚СЂРѕРєР°
 el_size db 1
 
 .code
@@ -43,7 +43,7 @@ mov al,mas[esi][edi]
 
 PrintDec eax
 
-mov edx,eax              ;;;;;;;;;;;;;;;;;;;;;;;Первый(нулевой) элемент массива
+mov edx,eax              ;;;;;;;;;;;;;;;;;;;;;;;РџРµСЂРІС‹Р№(РЅСѓР»РµРІРѕР№) СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°
 
     mov ecx,3
     inc j
@@ -251,7 +251,7 @@ mov al,mas[esi][edi]
 
 PrintDec edx 
 
-PrintText "Максимальный элемент массива: "
+PrintText "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР°: "
 PrintDec edx
 
 inkey " "
