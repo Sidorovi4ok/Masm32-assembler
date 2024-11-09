@@ -9,5 +9,5 @@ start:
     printf("%d\n",eax)
     printf("%d\n",ebx)
 inkey " "
-invoke ExitProcess,0 ; выход в Windows
+invoke ExitProcess, 0;
 end start
